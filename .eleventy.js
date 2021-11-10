@@ -181,19 +181,19 @@ module.exports = function(config) {
   });
 
   // Display 404 page in BrowserSnyc
-  config.setBrowserSyncConfig({
-    callbacks: {
-      ready: (err, bs) => {
-        const content_404 = fs.readFileSync("dist/404.html");
+  // config.setBrowserSyncConfig({
+  //   callbacks: {
+  //     ready: (err, bs) => {
+  //       const content_404 = fs.readFileSync("dist/404.html");
 
-        bs.addMiddleware("*", (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
-        });
-      }
-    }
-  });
+  //       bs.addMiddleware("*", (req, res) => {
+  //         // Provides the 404 content without redirect.
+  //         res.write(content_404);
+  //         res.end();
+  //       });
+  //     }
+  //   }
+  // });
 
   // Eleventy configuration
   return {
