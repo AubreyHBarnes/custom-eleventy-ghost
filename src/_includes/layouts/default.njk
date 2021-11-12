@@ -45,7 +45,7 @@
             <meta property="article:author" content="{{ site.url }}">
         {%- endblock -%}
 
-        {% set css %}{% include "css/styles.css" %}{% endset %}
+        {% set css %}{% include "css/main.css" %}{% endset %}
         <style>{{ css | cssmin | safe }}</style>
 
         <script>document.documentElement.classList.remove('no-js');</script>
@@ -54,26 +54,35 @@
         {{ codeinjection_head | safe if codeinjection_head }}
     </head>
     <body>
-        {% include "partials/icons.njk" %}
-        <div class="viewport">
+        <div id="wrapper">
 
-            <div class="viewport-top">
-                {% include "partials/header.njk" %}
+            <div class="viewport">
 
-                <main class="site-main">
-                    <div class="container">
-                        {% block content %}
-                        {% endblock content %}
-                    </div>
-                </main>
+                <div class="viewport-top">
+                    {% include "partials/header.njk" %}
+
+                    <div id="main">
+                        <div class="container">
+                            {% block content %}
+                            {% endblock content %}
+                        </div>
+                    </main>
+                </div>
+
+                <div class="viewport-bottom">
+                    {% include "partials/footer.njk" %}
+                </div>
+
+                {{ site.codeinjection_foot | safe if site.codeinjection_foot }}
+                {{ codeinjection_foot | safe if codeinjection_foot }}
             </div>
-
-            <div class="viewport-bottom">
-                {% include "partials/footer.njk" %}
-            </div>
-
-            {{ site.codeinjection_foot | safe if site.codeinjection_foot }}
-            {{ codeinjection_foot | safe if codeinjection_foot }}
         </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.scrollex.min.js"></script>
+        <script src="js/jquery.scrolly.min.js"></script>
+        <script src="js/browser.min.js"></script>
+        <script src="js/breakpoints.min.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
