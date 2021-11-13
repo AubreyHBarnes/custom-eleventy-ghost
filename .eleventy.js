@@ -22,6 +22,8 @@ const stripDomain = url => {
 };
 
 module.exports = function(config) {
+
+  config.addPassthroughCopy('./src/js/');
   // Minify HTML
   config.addTransform("htmlmin", htmlMinTransform);
 
@@ -208,4 +210,5 @@ module.exports = function(config) {
     markdownTemplateEngine: "njk",
     passthroughFileCopy: true
   };
+  
 };
