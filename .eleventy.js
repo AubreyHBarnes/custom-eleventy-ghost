@@ -22,6 +22,7 @@ const stripDomain = url => {
 };
 
 module.exports = function(config) {
+  config.addPassthroughCopy("./src/assets/*/*");
 
   config.addPassthroughCopy('./src/js/');
   // Minify HTML
