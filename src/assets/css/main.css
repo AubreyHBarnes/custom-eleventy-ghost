@@ -3008,7 +3008,7 @@ input, select, textarea {
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
-				width: 16em;
+				/* width: 16em; */
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3059,9 +3059,9 @@ input, select, textarea {
 				padding: 0.35em;
 			}
 
-				.spotlight .image img {
+				/* .spotlight .image img {
 					width: 12em;
-				}
+				} */
 
 		}
 
