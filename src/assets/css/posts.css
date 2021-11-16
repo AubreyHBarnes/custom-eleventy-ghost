@@ -23,12 +23,12 @@
     display: grid;
     justify-content: space-between;
     grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   }
   
   @media (max-width: 980px) {
     .post-feed {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) 1fr;
     }
   }
   @media (max-width: 680px) {
