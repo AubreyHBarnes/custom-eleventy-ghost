@@ -2362,6 +2362,11 @@ input, select, textarea {
 
 /* Image */
 
+span.image.headshot-img img {
+    width: 200px;
+    height: 200px;
+}
+
 	.image {
 		border-radius: 8px;
 		border: 0;
