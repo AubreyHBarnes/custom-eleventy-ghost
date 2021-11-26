@@ -1,3 +1,6 @@
+{# an njk function declaration. function name is card, post is being passed in from collection.posts at
+index.njk #}
+
 {% macro card(post) %}
     <a class="post-card{% if post.featured %}  post-card-featured{% endif %}" href="{{ post.url }}">
         <header class="post-card-header">
