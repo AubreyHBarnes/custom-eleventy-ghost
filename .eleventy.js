@@ -16,6 +16,8 @@ const api = new ghostContentAPI({
   version: "v2"
 });
 
+console.log(api.url)
+
 // Strip Ghost domain from urls
 const stripDomain = url => {
   return url.replace(process.env.GHOST_API_URL, "");
