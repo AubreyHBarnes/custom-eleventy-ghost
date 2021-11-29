@@ -9,8 +9,6 @@ const api = new ghostContentAPI({
   version: "v2"
 });
 
-;
-
 // Get all site information
 module.exports = async function() {
   const siteData = await api.settings
@@ -23,7 +21,5 @@ module.exports = async function() {
 
   if (process.env.SITE_URL) siteData.url = process.env.SITE_URL;
 
-
-  // console.log(siteData.url);
   return siteData;
 };
