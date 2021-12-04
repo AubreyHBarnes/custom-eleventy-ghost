@@ -45,5 +45,27 @@
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-plugin-ghost": "^2.7.0"
+  },
+  "config": {
+    "image_sizes": {
+      "xxs": {
+          "width": 30
+      },
+      "xs": {
+          "width": 100
+      },
+      "s": {
+          "width": 300
+      },
+      "m": {
+          "width": 600
+      },
+      "l": {
+          "width": 1000
+      },
+      "xl": {
+          "width": 2000
+      }
+    }
   }
 }

@@ -1,23 +1,28 @@
-{% extends 'layouts/default.njk' %}
+{% extends 'layouts/post-wrapper.njk' %}
 
 {% set title = post.title %}
 {% set codeinjection_head = post.codeinjection_head %}
 {% set codeinjection_foot = post.codeinjection_foot %}
 
 {% block content %}
+<div id="wrapper">
     <article class="content">
+        <header id="header">
+            <h1 class="content-title">{{ title }}</h1>
+        </header>
         {% if post.feature_image %}
             <figure class="post-feature-image">
                 <img src="{{ post.feature_image }}" alt="{{ title }}">
             </figure>
         {% endif %}
-        <section class="post-full-content">
-            <h1 class="content-title">{{ title }}</h1>
-            <section class="content-body load-external-scripts">
+        <section id="content" class="main">
+            
+            
                 {{ content | safe }}
-            </section>
+
         </section>
     </article>
+</div>
 {% endblock %}
 
 {%- block seo -%}
@@ -47,3 +52,4 @@
     <meta property="og:locale" content="{{ site.lang }}">
     <meta property="article:author" content="{{ site.url }}">
 {%- endblock -%}
+
