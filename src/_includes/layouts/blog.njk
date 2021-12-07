@@ -64,14 +64,14 @@
             <div class="viewport">
 
                 <div class="viewport-top">
-                    {# {% include "partials/header.njk" %} #}
+                     {% include "partials/navigation.njk" %} 
                 
-                    <main class="site-main">
+                
                         <div id="main" class="container">
                             {% block content %}
                             {% endblock content %} 
                         </div>
-                    </main>
+                    
                 </div>
 
                 <div class="viewport-bottom">
@@ -82,6 +82,13 @@
                 {{ codeinjection_foot | safe if codeinjection_foot }}
             </div>
         </div>
+        <script src="{{ '/assets/js/jquery.min.js' | url }}" defer></script>
+        <script src="{{ '/assets/js/jquery.scrollex.min.js' | url }}" defer></script>
+        <script src="{{ '/assets/js/jquery.scrolly.min.js' | url }}" defer></script>
+        <script src="{{ '/assets/js/breakpoints.min.js' | url }}" defer></script>
+        <script src="{{ '/assets/js/browser.min.js' | url }}" defer></script>
+        <script src="{{ '/assets/js/main.js' | url }}" defer></script>
+        <script src="{{ '/assets/js/util.js' | url }}" defer></script>
     </body>
 </html>
 
