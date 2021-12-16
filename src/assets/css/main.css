@@ -8,7 +8,7 @@
 */
 
 :root {
-	--content-font-size: 1.5rem;
+	--content-font-size: 1.3rem;
 }
 
 html, body, div, span, applet, object,
@@ -3802,7 +3802,7 @@ span.image.headshot-img img {
 	font-size: 2.7rem;
 }
 
-#header.alt p {
+#header.alt p, .content {
 	font-size: var(--content-font-size);
 	line-height: 1.2;
 }
