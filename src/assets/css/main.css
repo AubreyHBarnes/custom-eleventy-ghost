@@ -3807,5 +3807,18 @@ span.image.headshot-img img {
 	line-height: 1.2;
 }
 
-/* blog post styles */
+.form-container {
+	width: 100%
+}
+
+@media screen and (min-width: 680px) {
+	.name-email-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.name-email-container p {
+		width: 16rem;
+	}
+}
 
