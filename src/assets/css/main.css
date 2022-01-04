@@ -3814,11 +3814,12 @@ span.image.headshot-img img {
 @media screen and (min-width: 680px) {
 	.name-email-container {
 		display: flex;
-		justify-content: space-between;
+		gap: 1rem;
+		
 	}
 
 	.name-email-container p {
-		width: 16rem;
+		width: 100%;
 	}
 }
 
