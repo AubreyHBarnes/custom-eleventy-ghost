@@ -39,7 +39,8 @@
     "dotenv": "^8.0.0",
     "eleventy-plugin-local-images": "^0.4.0",
     "eslint-utils": "3.0.0",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "markdown-it": "12.3.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",
@@ -48,22 +49,22 @@
   "config": {
     "image_sizes": {
       "xxs": {
-          "width": 30
+        "width": 30
       },
       "xs": {
-          "width": 100
+        "width": 100
       },
       "s": {
-          "width": 300
+        "width": 300
       },
       "m": {
-          "width": 600
+        "width": 600
       },
       "l": {
-          "width": 1000
+        "width": 1000
       },
       "xl": {
-          "width": 2000
+        "width": 2000
       }
     }
   }

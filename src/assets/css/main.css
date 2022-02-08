@@ -3798,6 +3798,8 @@ span.image.headshot-img img {
 	font-size: var(--content-font-size);
 } */
 
+
+
 #header.alt h1 {
 	font-size: 2.7rem;
 }
@@ -3812,6 +3814,13 @@ span.image.headshot-img img {
 }
 
 @media screen and (min-width: 680px) {
+
+	.showcase {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+
 	.name-email-container {
 		display: flex;
 		gap: 1rem;
